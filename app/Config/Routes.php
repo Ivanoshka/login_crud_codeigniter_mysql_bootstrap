@@ -29,6 +29,9 @@ $routes->post('/crear', 'Home::crear');
 //ruta actualizar
 $routes->post('/actualizar', 'Home::actualizar');
 
+//rutas para olvide mi contraseña
+$routes->get('/forgot_password', 'PasswordController::showForgotPasswordForm');
+$routes->post('/forgot_password', 'PasswordController::sendResetLinkEmail');
 
 
 
